@@ -36,8 +36,8 @@
         <div class="row">
             <div class="col-6">
                 <div class="p-3 m-2 bg-success text-white">
-               <h1>Break</h1>
-               <?php
+                    <h1>Break</h1>
+                    <?php
                  
                  $names = array("Rocky","Max","Arturo","Mariana", "Hector");
                  
@@ -82,8 +82,41 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <div class="p-3 m-2 bg-info text-white">
-                    <h3>Hola Arturo</h3>
+                <div class="p-3 m-2 bg-danger text-white">
+                    <h3>POO</h3>
+
+                    <?php
+                        class Mascota {
+                            public $patas;
+                            public $nombre;
+                            public $tipo;
+
+                            function __construct($nombre,$patas,$tipo){
+                                $this->nombre = $nombre;
+                                $this->patas = $patas;
+                                $this->tipo = $tipo;
+                               
+                            }
+                        
+                            public function getDesc(){
+                                if ($this->patas == 0){
+                                    return " Tu mascota es un " . $this->tipo . " se llama " . $this->nombre . " y no tiene patas";   
+                                }else {
+                                    return " Tu mascota es un " . $this->tipo . " se llama " . $this->nombre . " y tiene " . $this->patas . " patas";
+                                }
+                                
+                            }
+                        }
+                        
+                        $perro = new Mascota("Tom",4,"perro");
+                        $gato = new Mascota("Toli",4,"gato");
+                        $pez = new Mascota("Xundaru",0,"pez");
+
+
+                        echo $perro->getDesc() . "<br>";
+                        echo $gato->getDesc() . "<br>";
+                        echo $pez->getDesc() . "<br>";
+                    ?>
                 </div>
             </div>
             <div class="col-4">
@@ -115,7 +148,7 @@
                 </div>
             </div>
         </div>
-            
+
         <div class="row">
             <div class="col-6">
                 <div class="p-3 m-2 bg-info text-white text-center">
@@ -166,8 +199,9 @@
         </div>
 
 
-        </div><!--DIV CONTAINER FINALIZE -->
-        
+    </div>
+    <!--DIV CONTAINER FINALIZE -->
+
 </body>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
