@@ -82,7 +82,7 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <div class="p-3 m-2 bg-danger text-white">
+                <div class="p-3 m-2 bg-danger text-white text-justify">
                     <h3>POO</h3>
 
                     <?php
@@ -107,7 +107,7 @@
                                 
                             }
                         }
-                        
+
                         $perro = new Mascota("Tom",4,"perro");
                         $gato = new Mascota("Toli",4,"gato");
                         $pez = new Mascota("Xundaru",0,"pez");
@@ -119,9 +119,46 @@
                     ?>
                 </div>
             </div>
+
             <div class="col-4">
-                <div class="p-3 m-2 bg-info text-white">
-                    <h3>Hola Arturo</h3>
+                <div class="p-3 m-2 bg-primary text-white">
+                    <h3>Herencia</h3>
+
+                    <?php
+                    class Masscota {
+                        public $nombre;
+                        public $patas;                           
+                    
+
+                    function __construct($nombre,$patas){
+                        $this->nombre = $nombre;
+                        $this->patas = $patas;
+                    }
+
+                    function eat(){
+                        return "Estoy comiendo";
+                    
+                    }
+                    function sleep(){
+                        return "Estoy durmiendo";
+                    
+                    }
+                }
+
+                    class Perro extends Masscota {
+
+
+                    }
+
+                    class Gato extends Masscota {
+                        
+                    }
+                        $tommy = new Perro("Tommy",4);
+                        $rocky = new Gato("rocky",4);
+                        
+                        echo $tommy ->eat() . "<br>";
+                        echo $rocky ->sleep();
+                    ?>
                 </div>
 
             </div>
