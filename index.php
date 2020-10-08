@@ -28,7 +28,11 @@
     </nav>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
+<<<<<<< HEAD
             <h1 class="display-4">Bienvenido a mi portafolio</h1>
+=======
+            <h1 class="display-4">Bienvenido a mi portafolio!!!</h1>
+>>>>>>> Develop
             <p class="lead">Ingeniero en Sistemas Computacionales.</p>
         </div>
     </div>
@@ -36,7 +40,11 @@
         <div class="row">
             <div class="p-3 mb-2 bg-primary text-white">
                 <?php
+<<<<<<< HEAD
                 Hola
+=======
+                Hola este texto es PHP
+>>>>>>> Develop
                 ?>
             </div>
         </div>
