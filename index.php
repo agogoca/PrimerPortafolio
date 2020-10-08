@@ -36,7 +36,7 @@
         <div class="row">
             <div class="p-3 mb-2 bg-primary text-white">
                 <?php
-                Hola
+                Hola este texto es PHP
                 ?>
             </div>
         </div>
