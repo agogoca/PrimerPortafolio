@@ -28,7 +28,7 @@
     </nav>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Bienvenido a mi portafolio</h1>
+            <h1 class="display-4">Bienvenido a mi portafolio!!</h1>
             <p class="lead">Ingeniero en Sistemas Computacionales.</p>
         </div>
     </div>
