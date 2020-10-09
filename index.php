@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home </a>
+                    <a class="nav-link" href="index.php">Home </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="form.html">Form </a>
@@ -33,6 +33,61 @@
         </div>
     </div>
     <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="p-3 m-2 bg-light text-dark">
+                    <h3>Formularios</h3>
+                    <form class="form-inline" method="POST" action="#">
+                        
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="inputText" class="sr-only">Texto</label>
+                            <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Di algo">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 m-2 bg-info text-white">
+
+                    <h3>Formularios</h3>
+                    <?php
+                    if(isset($_POST['inputText'])){ 
+                    echo $_POST['inputText'];
+                    } else {
+                    echo "Esperando saludo";
+                    }
+                    ?>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="p-3 m-2 bg-dark text-white">
+                    <h1>Calculadora</h1>
+
+                    <?php
+                class Calculadora {
+                public static function sumar($num1,$num2){
+                    return $num1+$num2;
+                }
+                public static function restar($num1,$num2){
+                    return $num1-$num2;
+                }
+
+            }
+
+                $calc = new Calculadora();
+                echo " El Resultado de la suma es: " . calculadora::sumar(1,1) . "<br>";
+                echo " El Resultado de la resta es: " . calculadora::restar(1,1) . "<br>";
+                ?>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row">
             <div class="col-6">
                 <div class="p-3 m-2 bg-success text-white">
